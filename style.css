@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('https://imgs.search.brave.com/vrT2gl1JceLX--9fFKWEx3wOthmNzzkbyfy531ldKyI/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4x/OGxLTWJob3V1U2hW/UkFGZGdIcEdnSGFF/SyZwaWQ9QXBp') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position:relative;
+    gap:20px;
+    
+}
+.inputContainer{
+    width: 400px;
+    display: flex;
+    background-color: beige;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 50px;
+    gap:20px;
+    padding: 5px 20px;
+}
+
+#plus{
+    flex:1;
+    border-radius: 10px;
+
+}
+
+#inputText{
+    flex:4;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+.task{
+    height:fit-content;
+    width:400px;
+    background-color: white;
+    font-size: 2rem;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid black;
+    
+    
+}
+
+li{
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    
+}
+
+
+li > button {
+    height: 50%;
+    width:fit-content;
+    padding: 2px;
+}
+.delete{
+    position: absolute;
+    right:20px;
+    margin-top:5px;
+    border: 1px solid rgb(236, 88, 88);
+    color: rgb(236, 88, 88);
+    font-size: 1.5rem;
+
+}
+
+.tick {
+    position: absolute;
+    right:100px;
+    margin-top:5px ;
+    border: 1px solid rgb(151, 151, 25);
+    color:rgb(151, 151, 25);
+
+}    
+.strikeThrough{
+    text-decoration: line-through;
+    transition: 1s;
+}
